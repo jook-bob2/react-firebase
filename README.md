@@ -1,47 +1,41 @@
-# Getting Started with Create React App
+# React-firebase 프로젝트 설정
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 1. node.js 설치
+ - https://nodejs.org 사이트에 접속한다.
+ - LTS 버전을 설치한다.
 
-In the project directory, you can run:
+## 2. Command 창을 열고, 아래 명령어를 실행한다.
+ - node -v or node --version 입력하여 현재 노드 버전을 확인한다.
+ - npm install -g yarn 을 입력하여 yarn 을 설치한다.
+ - yarn -v 를 입력하여 버전을 확인한다.
 
-### `yarn start`
+## 3. React 프로젝트 설치
+ - 프로젝트를 설치할 폴더로 이동하여 Command 창을 연다.
+ - yarn create react-app react-firebase --template typescript 를 실행하면, 타입스크립트를 자동 설치 해준다. (프로젝트명은 react-firebase 입니다.)
+ - cd react-firebase 입력 -> code . 입력하면 프로젝트가 visual studio code 가 열린다.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 4. 파이어베이스 설치
+ - VSC(Visual studio code)에서 터미널을 열고, yarn add firebase 명령어를 실행 한다.
+ - firebase 상용버전(v9.22.2)이 설치 된 것을 package.json 파일을 열어 확인 해본다.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 5. 파이어베이스 프로젝트 생성
+ - https://console.firebase.google.com/u/0/ 사이트로 이동한다.
+ - 프로젝트 추가 -> 프로젝트 이름 입력 -> 모든 설정을 default 설정
+ - 프로젝트 메인 -> 프로젝트 개요 -> 프로젝트 설정 -> 내 앱에서 web 선택 -> 모든 설정을 default 설정 (설정 진행 중 초기화 방법이 나오는데, 프로젝트 설정에서 재확인 가능합니다.)
+ - VSC로 돌아오고, 최상위 디렉토리에서 firebase-config.js 파일을 생성한 후에, 초기화 방법에 나왔던 코드를 복사하여 붙여 넣는다.
 
-### `yarn test`
+## 6. VSC에서 파이어베이스 초기화
+ - VSC를 열고, 프로젝트의 최상위 디렉토리에서 firebase-config.js 파일을 생성한다.
+ - 파이어베이스 프로젝트 생성 시 초기화 코드를 복사하여 firebase-config.js 에 붙여넣어 준다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 7. 데이터베이스 만들기
+ - 파이어베이스 프로젝트 메인으로 다시 돌아온다.
+ - 빌드 -> Firebase Database 메뉴 선택 -> 데이터베이스 만들기 선택 -> 규칙 탭 선택 -> read write 기능이 초기에는 false 인데, true로 수정하고 게시를 선택 한다.
+ - 데이터 탭 선택 -> 컬렉션 시작 선택 -> 컬렉션 ID 입력 -> 필드/유형/값 을 각각 입력 -> 자동 ID 선택 -> 저장 선택
 
-### `yarn build`
+## 8. VSC에서 파이어베이스 초기화
+ - VSC를 열고, 프로젝트의 src 폴더 안에 config 폴더를 생성한다. 그리고 firebase-config.js 파일을 생성한다.
+ - 파이어베이스 프로젝트 생성 시 초기화 코드를 복사하여 firebase-config.js 에 붙여넣어 준다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# react-firebase
