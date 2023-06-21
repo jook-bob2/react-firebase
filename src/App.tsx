@@ -73,8 +73,6 @@ function App() {
     // addDoc을 이용해서 내가 원하는 collection에 내가 원하는 key로 값을 추가한다.
     if (validCheck()) {
       try {
-        console.log("new name ", newName);
-        console.log("new age ", newAge);
         await addDoc(usersCollectionRef, {
           name: newName,
           age: Number(newAge),
@@ -94,7 +92,7 @@ function App() {
       // 내가 업데이트 하고자 하는 db의 컬렉션의 id를 뒤지면서 내가 수정하고자 하는 id랑 같은 id값을 가진 데이터를 찾는다
       const userDoc = doc(db, "users", id);
       // 내가 업데이트 하고자 하는 key를 어떻게 업데이트할지 준비,, 중요한점이 db에는 문자열로 저장되어있다. 그래서 createUsers()함수안에서 age를 생성할때 숫자열로 형변환 해줘야한다
-      const newField = { age: age + 1 };
+      const newField = { age: Number(age) + 1 };
 
       try {
         // updateDoc()을 이용해서 업데이트
