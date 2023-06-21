@@ -20,7 +20,7 @@
  - firebase 상용버전(v9.22.2)이 설치 된 것을 package.json 파일을 열어 확인 해본다.
 
 ## 5. 파이어베이스 프로젝트 생성
- - https://console.firebase.google.com/u/0/ 사이트로 이동한다.
+ - (https://console.firebase.google.com/u/0/) 사이트로 이동한다.
  - 프로젝트 추가 -> 프로젝트 이름 입력 -> 모든 설정을 default 설정
  - 프로젝트 메인 -> 프로젝트 개요 -> 프로젝트 설정 -> 내 앱에서 web 선택 -> 모든 설정을 default 설정 (설정 진행 중 초기화 방법이 나오는데, 프로젝트 설정에서 재확인 가능합니다.)
  - VSC로 돌아오고, 최상위 디렉토리에서 firebase-config.js 파일을 생성한 후에, 초기화 방법에 나왔던 코드를 복사하여 붙여 넣는다.
