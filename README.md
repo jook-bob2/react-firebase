@@ -1,9 +1,8 @@
 # React-firebase 프로젝트 설정
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## 1. node.js 설치
- - https://nodejs.org 사이트에 접속한다.
+ - (https://nodejs.org) 사이트에 접속한다.
  - LTS 버전을 설치한다.
 
 ## 2. Command 창을 열고, 아래 명령어를 실행한다.
